@@ -1,0 +1,6 @@
+[
+    {"title":"Vue计算属性Vs Method","date":"2017-10-20","imgUrl":"../../static/vue.jpg","brief":"Vue中使用计算属性和Method分别适用什么场景呢，让我们一起来看看吧！","describe":"我们可以将同一函数定义为一个 method 而不是一个计算属性。对于最终的结果，两种方式确实是相同的。然而，不同的是计算属性是基于它们的依赖进行缓存的。计算属性只有在它的相关依赖发生改变时才会重新求值。这就意味着只要 message 还没有发生改变，多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数，这对于计算量极大的操作是非常有必要的！"}
+  , {"title":"vue自定义插件","date":"2017-10-20","imgUrl":"../../static/vue.jpg","brief":"loading，toast这类常用的工具，我们需要将它们做成插件，方便以后调用。","describe":"<p> 1）首先建立一个loading.vue文件，写好模板 。</p>  <p>2)然后在plugins目录下建立一个loading目录，包含index.js和loading.vue文件;</P>  <p>3）index.js 里面写一个install函数，并返回（install函数的写法可以参见博客）</P> <p>4）在main.js中import loading 目录，默认读取loading中的index.js文件。</P>"}
+  , {"title":"github建站总结","date":"2017-10-20","imgUrl":"../../static/vue.jpg","brief":"你想拥有自己的一个网站么，那就跟我来吧！","describe":"先在github上面建立一个仓库，记住仓库地址，并绑定自己的域名，接着在本地打开一个文件夹，比如时myproject，在此文件夹运行git Bash here（需要先安装git），运行命令git clone https://github.com/smokeStar/Wenjian.github.io.git；将仓库克隆到本地，你会得到一个以你仓库名命名的文件夹，cd到该目录下，把项目复制到里面，然后运行命令 git add .;git commit -m '提交项目'; 最后git push 即可。"}
+  , {"title":"vue-resource的使用","date":"2017-10-20","imgUrl":"../../static/vue.jpg","brief":"vue项目中可以使用vue-resource插件进行ajax请求。","describe":"在vue-resource中可以使用拦截器来加入请求时有相应的loading图示，拦截器在发送请求前或响应返回时做一些特殊的处理。"}
+]
