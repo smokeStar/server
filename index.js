@@ -6,7 +6,7 @@ const api        = require ('./api')
     , bodyParser = require ('body-parser')
 
     , express    = require ('express')
-    // , cors       = require('cors')
+    // , cors    = require('cors')
     , app        = express();
 
 // 自定义中间件
@@ -33,4 +33,4 @@ app.set('port', process.env.PORT || 3000);
 //   const html = fs.readFileSync(path.resolve(__dirname,'../dist/index.html'),'utf-8');
 //   res.send(html);
 // });
-// app.listen(3000);
+app.listen(app.get('port'));
