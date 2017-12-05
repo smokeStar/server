@@ -10,5 +10,5 @@ app.get('*', function(req, res){
   const html = fs.readFileSync('./index.html','utf-8');
   res.send(html);
 });
-app.listen(8088);
-console.log('listen 8088');
+var port_number = app.listen(process.env.PORT || 5000);
+console.log('正在监听5000端口');
