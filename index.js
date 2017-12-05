@@ -11,7 +11,7 @@ const api        = require ('./api')
 
 // 自定义中间件
 let allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:8080','http://www.wenjian.group');
+  res.header('Access-Control-Allow-Origin', 'http://192.168.2.132:8080','http://www.wenjian.group');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   res.header('Access-Control-Allow-Credentials','true');

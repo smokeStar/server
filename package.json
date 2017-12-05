@@ -22,7 +22,7 @@
     "express-session": "^1.15.6",
     "marked": "^0.3.6",
     "mongoose": "^4.13.1",
-    "body-parser":"^6.11.1"
+    "body-parser":"^1.4.3"
   },
   "homepage": "https://github.com/smokeStar/server#readme"
 }
