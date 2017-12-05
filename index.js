@@ -25,9 +25,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(api);
 app.use(express.static(path.resolve(__dirname,'../dist')));
 
+//在Heroku或者直接在所在项目中直接node app.js 运行项目的话，就必须在node.js中进行注册端口
+app.set('port', process.env.PORT || 3000);
+
+
 // app.get('*', function(req, res){
 //   const html = fs.readFileSync(path.resolve(__dirname,'../dist/index.html'),'utf-8');
 //   res.send(html);
 // });
-app.listen(3000);
-console.log('listen 8088');
+// app.listen(3000);
