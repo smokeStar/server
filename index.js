@@ -29,5 +29,5 @@ app.use(express.static(path.resolve(__dirname,'../dist')));
 //   const html = fs.readFileSync(path.resolve(__dirname,'../dist/index.html'),'utf-8');
 //   res.send(html);
 // });
-app.listen(8088);
+app.listen(5000);
 console.log('listen 8088');
