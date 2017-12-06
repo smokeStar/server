@@ -6,12 +6,11 @@ const api        = require ('./api')
     , bodyParser = require ('body-parser')
 
     , express    = require ('express')
-    // , cors       = require('cors')
     , app        = express();
 
 // 自定义中间件
 let allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin','http://www.wenjian.group');
+  res.header('Access-Control-Allow-Origin', 'http://www.wenjian.group');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   res.header('Access-Control-Allow-Credentials','true');
@@ -25,9 +24,5 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(api);
 app.use(express.static(path.resolve(__dirname,'images')));
 
-// app.get('*', function(req, res){
-//   const html = fs.readFileSync(path.resolve(__dirname,'../dist/index.html'),'utf-8');
-//   res.send(html);
-// });
 app.listen(8088);
 console.log('listen 8088');

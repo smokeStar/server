@@ -4,7 +4,6 @@ const models   = require('./db');
 const express  = require('express');
 const app      = express();
 const session  = require ('express-session');
-// const MongoStore = require('connect-mongo')(session);
 let article    = models.article;
 let detail     = models.detail;
 let login      = models.login;
