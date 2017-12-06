@@ -23,6 +23,6 @@ app.use(bodyParser.json()); // 解析body数据
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(api);
 app.use(express.static(path.resolve(__dirname,'images')));
+app.set('port', process.env.PORT || 3000);
 
-app.listen(8088);
-console.log('listen 8088');
+app.listen(app.get('port'));
